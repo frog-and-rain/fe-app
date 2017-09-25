@@ -27,10 +27,15 @@ const TopBarView = () => {
 				<img src={vimeo} width={12} height={12} alt="vimeo" />
 			</a>
 			
-			<span>0909090909</span>
-			<span>0909090909</span>
-			
-			<Language />
+			<div className="top-bar-info">
+				<span>0909090909</span>
+				<span>0909090909</span>
+				
+				<Language />
+				<button className="top-bar-button">
+					Free Analysis
+				</button>
+			</div>
 		</div>
 	);
 };
