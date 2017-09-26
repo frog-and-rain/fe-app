@@ -3,7 +3,6 @@
 	width: 100%;
 	height: 42px;
 	background-color: #323232;
-	color: #c5c5c5;
 }
 
 .top-bar-content {
@@ -62,7 +61,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	color: gray;
+	color: #cacaca;
 	font-family: "Tamil Sangam MN";
 	margin-right: 24px;
 }

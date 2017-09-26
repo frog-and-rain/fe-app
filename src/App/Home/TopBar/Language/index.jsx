@@ -11,7 +11,7 @@ class Language extends React.Component {
 		super(props);
 		
 		this.state = {
-			language: '',
+			language: languages[1],
 		};
 		
 		this.changeLanguage = this.changeLanguage.bind(this);
@@ -23,7 +23,10 @@ class Language extends React.Component {
 	
 	render() {
 		return (
-			<View list={languages} changeLanguage={this.changeLanguage} />
+			<View
+				language={this.state.language}  list={languages}
+				changeLanguage={this.changeLanguage}
+			/>
 		)
 	}
 }
