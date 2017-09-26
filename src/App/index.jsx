@@ -11,9 +11,9 @@ import {
 const App = () => (
   <Router>
     <div>
-      <Route exact path="/home" component={Home}/>
-      <Route path="/accounts" component={Accounts}/>
-      <Route path="/admin" component={Admin}/>
+      <Route exact path="/home" component={Home} />
+      <Route path="/accounts" component={Accounts} />
+      <Route path="/admin" component={Admin} />
     </div>
   </Router>
 );

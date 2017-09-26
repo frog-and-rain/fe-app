@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './styles.css';
+import View from './View';
 
 class Header extends React.Component {
 	render() {
 		return (
-			<div className="header">Header !</div>
+			<View />
 		);
 	}
 }
