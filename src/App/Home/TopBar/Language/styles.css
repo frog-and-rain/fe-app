@@ -1,10 +1,11 @@
 .dropdown-lang {
 	background: none;
 	position: relative;
+	margin-right: 24px;
 }
 
 .dropdown-lang .content {
-	border: solid 1px gray;
+	border: solid 1px #f2f2f2;
 	display: none;
 	position: absolute;
 	width: auto;
@@ -12,19 +13,24 @@
 }
 
 .dropdown-lang button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	height: 42px;
-	padding: 0 16px 0 16px;
+	padding: 0 18px 0 18px;
 	background: none;
 	color: gray;
 	border: none;
 }
 
-.dropdown-lang button:hover {
-	background-color: #555454;
+.dropdown-lang button img {
+	margin-left: 6px;
 }
 
 .dropdown-lang:hover .content {
+	width: 150px;
 	display: block;
+	right: 0;
 }
 
 .dropdown-lang a {
@@ -32,10 +38,11 @@
 	background-color: white;
 	display: block;
 	border: none;
-	border-bottom: solid 1px gray;
 	margin-left: 0;
+	color: #c5c5c5;
+	text-decoration: none;
 }
 
 .dropdown-lang a:hover {
-	color: #c5c5c5;
+	color: #43cb83;
 }

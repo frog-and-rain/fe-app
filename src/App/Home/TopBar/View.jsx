@@ -1,40 +1,54 @@
 import React from 'react';
 
 import Language from './Language';
-import facebook from './logo/facebook.svg';
-import google from './logo/google.svg';
-import twitter from './logo/twitter.svg';
-import vimeo from './logo/vimeo.svg';
+import facebook from './icon/facebook.svg';
+import google from './icon/google.svg';
+import twitter from './icon/twitter.svg';
+import vimeo from './icon/vimeo.svg';
+import location from './icon/location-pin.svg';
+import phone from './icon/phone-call.svg';
+import chart from './icon/chart.svg';
 
 import './styles.css';
 
 const TopBarView = () => {
 	return (
 		<div className="top-bar">
-			<a href="">
-				<img src={twitter} width={12} height={12} alt="twitter" />
-			</a>
-			
-			<a href="">
-				<img src={facebook} width={12} height={12} alt="facebook" />
-			</a>
-			
-			<a href="">
-				<img src={google} width={12} height={12} alt="google" />
-			</a>
-			
-			<a href="">
-				<img src={vimeo} width={12} height={12} alt="vimeo" />
-			</a>
-			
-			<div className="top-bar-info">
-				<span>0909090909</span>
-				<span>0909090909</span>
+			<div className="top-bar-content">
+				<div className="top-bar-social">
+					<a className="top-bar-twitter-logo" href="">
+						<img src={twitter} width={12} height={12} alt="twitter" />
+					</a>
+					
+					<a className="top-bar-facebook-logo" href="">
+						<img src={facebook} width={12} height={12} alt="facebook" />
+					</a>
+					
+					<a className="top-bar-google-logo" href="">
+						<img src={google} width={12} height={12} alt="google" />
+					</a>
+					
+					<a className="top-bar-vimeo-logo" href="">
+						<img src={vimeo} width={12} height={12} alt="vimeo" />
+					</a>
+				</div>
 				
-				<Language />
-				<button className="top-bar-button">
-					Free Analysis
-				</button>
+				<div className="top-bar-info">
+					<span>
+						<img src={phone} width={16} height={16} alt="phone" />
+						0909090909
+					</span>
+					<span>
+						<img src={location} width={16} height={16} alt="location" />
+						Ho Chi Minh
+					</span>
+					
+					<Language />
+					<button className="top-bar-button">
+						<img src={chart} width={16} height={16} alt="chart" />
+						Free Analysis
+					</button>
+				</div>
 			</div>
 		</div>
 	);
