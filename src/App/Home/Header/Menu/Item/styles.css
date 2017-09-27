@@ -27,6 +27,7 @@
 }
 
 .header-menu-item .header-menu-item-content {
+	list-style-position: inside;
 	display: none;
 	background-color: white;
 	border: solid 1px #f2f2f2;
