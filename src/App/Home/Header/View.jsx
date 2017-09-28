@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Menu from './Menu';
+import HeaderBottom from './HeaderBottom';
 import './styles.css';
 
 const HeaderView = () => {
@@ -12,6 +13,7 @@ const HeaderView = () => {
 					<Menu />
 				</div>
 			</div>
+			<HeaderBottom />
 		</div>
 	)
 };

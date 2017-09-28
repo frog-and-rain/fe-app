@@ -4,7 +4,7 @@
 	margin-right: 24px;
 }
 
-.dropdown-lang .content {
+.dropdown-lang .dropdown-lang-content {
 	background-color: white;
 	border: solid 1px #f2f2f2;
 	display: none;
@@ -21,17 +21,19 @@
 	align-items: center;
 	justify-content: flex-end;
 	height: 42px;
+	width:84px;
 	padding: 0 18px 0 18px;
 	background: none;
 	color: #cacaca;
 	border: none;
+	cursor: pointer;
 }
 
 .dropdown-lang button img {
 	margin-left: 6px;
 }
 
-.dropdown-lang:hover .content {
+.dropdown-lang:hover .dropdown-lang-content {
 	width: 150px;
 	right: 0;
 	display: flex;

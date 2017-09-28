@@ -11,7 +11,7 @@ const LanguageView = ({ language, list, changeLanguage }) => {
 				<span>{language}</span>
 				<img src={down} width={10} height={10} alt="down" />
 			</button>
-			<ul className="content">
+			<ul className="dropdown-lang-content">
 				{
 					list.map(
 						item => (

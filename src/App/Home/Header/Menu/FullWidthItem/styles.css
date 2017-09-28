@@ -1,0 +1,67 @@
+.header-menu-full-width-item {
+	display: block;
+	position: relative;
+}
+
+.header-menu-full-width-item button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	height: 92px;
+	padding: 0 18px 0 18px;
+	background: none;
+	color: #999;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: "DIN Condensed";
+}
+
+.header-menu-full-width-item button:hover {
+	color: #43cb83;
+}
+
+.header-menu-full-width-item button:active {
+	color: #43cb83;
+}
+
+.header-menu-full-width-item .header-menu-full-width-item-content {
+	list-style-position: inside;
+	display: none;
+	background-color: white;
+	border: solid 1px #f2f2f2;
+	position: absolute;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: auto;
+}
+
+.header-menu-full-width-item-content-item {
+	width: 85%;
+	cursor: pointer;
+	text-align: left;
+}
+
+.header-menu-full-width-item-content-item li a {
+	text-decoration: none;
+	color: #999;
+}
+
+.header-menu-full-width-item-content-item li {
+	padding: 3px 15% 3px 0;
+	font-size: 14px;
+	color: #43cb83;
+}
+
+.header-menu-full-width-item-content-item hr {
+	border: none;
+	border-top: solid 1px #f2f2f2;
+	display: block;
+	width: 100%;
+}
+
+.header-menu-full-width-item-content-item:hover li a {
+	color: #43cb83;
+}

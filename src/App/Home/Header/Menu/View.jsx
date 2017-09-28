@@ -1,11 +1,16 @@
 import React from 'react';
 
 import Item from './Item';
+import FullWidthItem from './FullWidthItem';
+
+import './styles.css';
 
 const MenuView = () => {
 	return (
-		<div>
+		<div className="header-menu">
 			<Item />
+			<Item />
+			<FullWidthItem />
 		</div>
 	)
 };
