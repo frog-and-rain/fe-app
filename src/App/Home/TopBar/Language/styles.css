@@ -2,6 +2,7 @@
 	background: none;
 	position: relative;
 	margin-right: 24px;
+	cursor: pointer;
 }
 
 .dropdown-lang .dropdown-lang-content {
@@ -26,7 +27,6 @@
 	background: none;
 	color: #cacaca;
 	border: none;
-	cursor: pointer;
 }
 
 .dropdown-lang button img {

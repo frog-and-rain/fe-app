@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Menu from './Menu';
-import HeaderBottom from './HeaderBottom';
+import Bottom from './Bottom';
 import './styles.css';
 
 const HeaderView = () => {
@@ -13,7 +13,7 @@ const HeaderView = () => {
 					<Menu />
 				</div>
 			</div>
-			<HeaderBottom />
+			<Bottom />
 		</div>
 	)
 };

@@ -8,12 +8,7 @@ class MenuFullWidthItem extends React.Component {
 		this.node = null;
 		this.state = {
 			title: 'Full',
-			options: [
-				{ text: 'item 1', link: '#' },
-				{ text: 'item 2', link: '#' },
-				{ text: 'item 3', link: '#' },
-				{ text: 'item 4', link: '#' },
-			]
+			content: null,
 		};
 		
 		this.setNode = this.setNode.bind(this);

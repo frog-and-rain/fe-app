@@ -1,10 +1,10 @@
 import React from 'react';
+import './styles.css';
+import Content from './Content';
 
 const HeaderBottom = () => {
 	return (
-		<div className="header-bottom">
-			Full width content
-		</div>
+		<Content />
 	);
 };
 

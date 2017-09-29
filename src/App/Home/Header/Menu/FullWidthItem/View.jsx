@@ -3,7 +3,7 @@ import T from 'prop-types';
 
 import './styles.css';
 
-const MenuFullWidthItemView = ({ title, options, setNode }) => {
+const MenuFullWidthItemView = ({ title, setNode }) => {
 	return (
 		<div className="header-menu-full-width-item" ref={setNode}>
 			<button>{title}</button>
@@ -13,7 +13,6 @@ const MenuFullWidthItemView = ({ title, options, setNode }) => {
 
 MenuFullWidthItemView.propTypes = {
 	title: T.string.isRequired,
-	options: T.array.isRequired,
 	setNode: T.func.isRequired,
 };
 

@@ -14,11 +14,3 @@
 	align-items: center;
 	justify-content: space-between;
 }
-
-.header-bottom {
-	width: 100%;
-	position: absolute;
-	display: none;
-	background-color: white;
-	border: solid 1px #f2f2f2;
-}

@@ -33,43 +33,12 @@
 	border: solid 1px #f2f2f2;
 	position: absolute;
 	width: 210px;
-	padding: 0;
+	padding: 0 12px;
 	margin: 0;
 	height: auto;
 }
 
 .header-menu-item:hover .header-menu-item-content {
 	width: 150px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	z-index: 2;
-}
-
-.header-menu-item-content-item {
-	width: 85%;
-	cursor: pointer;
-	text-align: left;
-}
-
-.header-menu-item-content-item li a {
-	text-decoration: none;
-	color: #999;
-}
-
-.header-menu-item-content-item li {
-	padding: 3px 15% 3px 0;
-	font-size: 14px;
-	color: #43cb83;
-}
-
-.header-menu-item-content-item hr {
-	border: none;
-	border-top: solid 1px #f2f2f2;
 	display: block;
-	width: 100%;
-}
-
-.header-menu-item-content-item:hover li a {
-	color: #43cb83;
 }
