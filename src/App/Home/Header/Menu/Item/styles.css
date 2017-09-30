@@ -29,10 +29,12 @@
 
 .header-menu-item:hover .main-menu-item-content-list {
 	display: flex;
+	z-index: 99;
 }
 
 .header-menu-item:hover .main-menu-item-content-full {
 	display: flex;
+	z-index: 99;
 }
 
 .header-menu-item .main-menu-item-content-list {
