@@ -2,7 +2,7 @@ import React from 'react';
 
 import View from './View';
 
-class Header extends React.Component {
+class Content extends React.Component {
 	render() {
 		return (
 			<View />
@@ -10,4 +10,4 @@ class Header extends React.Component {
 	}
 }
 
-export default Header;
+export default Content;

@@ -4,26 +4,32 @@ import T from 'prop-types';
 import down from '../icon/down.svg';
 import './styles.css';
 
-const LanguageView = ({ list, changeLanguage }) => {
+const LanguageView = ({ language, list, changeLanguage }) => {
 	return (
 		<div className="dropdown-lang">
 			<button>
-				language
+				<span>{language}</span>
 				<img src={down} width={10} height={10} alt="down" />
 			</button>
-			<div className="content">
+			<ul className="dropdown-lang-content">
 				{
 					list.map(
-						item => (<a href="" onClick={() => changeLanguage(item)}>{item}</a>)
+						item => (
+							<div key={item} className="dropdown-lang-lang-item">
+								<li onClick={() => changeLanguage(item)}>{item}</li>
+								<hr/>
+							</div>
+						)
 					)
 				}
-			</div>
+			</ul>
 		</div>
 	)
 };
 
 LanguageView.propTypes = {
 	list: T.array.isRequired,
+	language: T.string.isRequired,
 	changeLanguage: T.func.isRequired,
 };
 

@@ -3,18 +3,14 @@
 	width: 100%;
 	height: 42px;
 	background-color: #323232;
-	color: #c5c5c5;
 }
 
 .top-bar-content {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
 	margin: 0 84px 0 84px;
-}
-
-.top-bar-content, .top-bar-social {
-	flex-grow: 12;
 }
 
 .top-bar-facebook-logo, .top-bar-google-logo, .top-bar-twitter-logo,
@@ -62,7 +58,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	color: gray;
+	color: #cacaca;
 	font-family: "Tamil Sangam MN";
 	margin-right: 24px;
 }
@@ -71,7 +67,6 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	flex-grow: 1;
 }
 
 .top-bar span img {

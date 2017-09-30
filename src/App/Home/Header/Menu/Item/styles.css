@@ -1,0 +1,123 @@
+.header-menu-item {
+	list-style-position: inside;
+	display: block;
+	float: left;
+	height: 84px;
+	cursor: pointer;
+	padding: 0 24px;
+}
+
+.header-menu-item .header-main-menu-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 13px;
+	height: 100%;
+	color: #838383;
+	text-decoration: none;
+}
+
+.header-menu-item li {
+	height: 84px;
+}
+
+.header-menu-item:hover .header-main-menu-title {
+	color: #43cb83;
+}
+
+.header-menu-item:hover .main-menu-item-content-list {
+	display: flex;
+}
+
+.header-menu-item:hover .main-menu-item-content-full {
+	display: flex;
+}
+
+.header-menu-item .main-menu-item-content-list {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	justify-content: flex-start;
+	border: solid 1px #f2f2f2;
+	border-top: solid 2px #f2f2f2;
+	background-color: white;
+	margin-left: -24px;
+}
+
+.header-menu-item .main-menu-item-content-full {
+	position: absolute;
+	display: none;
+	background-color: white;
+}
+
+.main-menu-item-content-full .item-content-header p {
+	text-align: left;
+	margin-top: 6px;
+	font-size: 10px;
+	color: #b6b6b6;
+}
+
+.main-menu-item-content-full .item-content-header h4 {
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 6px;
+}
+
+.main-menu-item-content-full .item-content-list {
+	list-style-type: disc;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-menu-item-content-list .item-content-list {
+	list-style-type: disc;
+	padding: 0 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.item-content-list .item-content-list-item {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.item-content-list-item .li-border {
+	text-align: left;
+	height: 30px;
+	color: #43cb83;
+}
+
+.item-content-list-item .li-none-border {
+	text-align: left;
+	height: 24px;
+	color: #43cb83;
+}
+
+.li-border a, .li-none-border a {
+	color: #9b9b9b;
+	font-size: 12px;
+	font-weight: 500;
+	font-family: Poppins, sans-serif;
+	text-decoration: none;
+}
+
+.li-border:hover a, .li-none-border:hover a {
+	color: #43cb83;
+}
+
+.item-content-list-item hr {
+	border: none;
+	border-top: solid 1px #f2f2f2;
+	display: block;
+	margin: 0;
+	width: 100%;
+}
+
+.item-content-list-item:last-child hr {
+	display: none;
+}

@@ -1,0 +1,12 @@
+.header-menu {
+	height: 84px;
+	font-family: Poppins, sans-serif;
+}
+
+.header-main-menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
