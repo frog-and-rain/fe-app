@@ -1,14 +1,15 @@
-.header-bottom {
+.content-full-width {
 	width: 100%;
 	height: 336px;
 	position: absolute;
-	display: none;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: white;
 	border: solid 1px #f2f2f2;
+	border-top: solid 2px #f2f2f2;
 }
 
-.header-bottom-column {
+.content-full-width-column {
 	padding: 0 36px;
 }

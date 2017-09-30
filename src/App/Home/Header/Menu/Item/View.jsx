@@ -1,23 +1,22 @@
 import React from 'react';
 import T from 'prop-types';
 
-import Item from '../../ItemContent';
+import ItemContent from './ItemContent';
 import './styles.css';
 
-const MenuItemView = ({ title, options }) => {
+const MenuItemView = ({ title, options, setNode, fullWidth }) => {
 	return (
-		<div className="header-menu-item">
-			<button>{title}</button>
-			<div className="header-menu-item-content">
-				<Item options={options} border />
-			</div>
-		</div>
+		<li ref={setNode} className="header-menu-item">
+			<a className="header-main-menu-title" href="">{title}</a>
+			<ItemContent options={options} fullWidth={fullWidth} border />
+		</li>
 	)
 };
 
 MenuItemView.propTypes = {
 	title: T.string.isRequired,
 	options: T.array.isRequired,
+	setNode: T.func.isRequired,
 };
 
 export default MenuItemView;

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Menu from './Menu';
-import Bottom from './Bottom';
 import './styles.css';
 
 const HeaderView = () => {
@@ -9,11 +8,8 @@ const HeaderView = () => {
 		<div className="header">
 			<div className="header-content">
 				<div className="header-content-logo">Logo</div>
-				<div className="header-content-menu">
-					<Menu />
-				</div>
+				<Menu />
 			</div>
-			<Bottom />
 		</div>
 	)
 };

@@ -1,9 +1,7 @@
 import React from 'react';
 import T from 'prop-types';
 
-import './styles.css';
-
-const ItemContent = ({ options, header, border }) => {
+const ContentList = ({ header, options, border }) => {
 	return (
 		<div>
 			{!!header && (
@@ -13,9 +11,9 @@ const ItemContent = ({ options, header, border }) => {
 				</div>
 			)}
 			
-			<ul className="item-content">
+			<ul className="item-content-list">
 				{options.map((item, index) =>
-					<div key={`item-content-${index}`} className="item-content-item">
+					<div key={`item-content-${index}`} className="item-content-list-item">
 						<li className={border ? 'li-border' : 'li-none-border'} key={`full-width-column-item-${index}`}>
 							<a href={item.link}>{item.text}</a>
 						</li>
@@ -24,13 +22,13 @@ const ItemContent = ({ options, header, border }) => {
 				)}
 			</ul>
 		</div>
-	)
+	);
 };
 
-ItemContent.propTypes = {
+ContentList.propTypes = {
 	options: T.array.isRequired,
-	header: T.object,
 	border: T.bool,
+	header: T.object,
 };
 
-export default ItemContent;
+export default ContentList;

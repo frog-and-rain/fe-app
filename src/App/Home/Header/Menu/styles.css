@@ -1,5 +1,11 @@
 .header-menu {
+	height: 92px;
+}
+
+.header-main-menu {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	padding: 0;
+	margin: 0;
 }

@@ -14,3 +14,7 @@
 	align-items: center;
 	justify-content: space-between;
 }
+
+.header-content-menu {
+	height: 100%;
+}
