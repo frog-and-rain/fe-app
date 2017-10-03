@@ -15,13 +15,33 @@ class Header extends React.Component {
 	}
 	
 	componentDidMount() {
+		let currentScrollY = 0;
 		window.addEventListener('scroll', () => {
-			if (window.scrollY > 42) {
-				this.node.style.position = 'fixed';
-				this.node.style.top = '0';
-			} else {
-				this.node.style.position = 'inherit';
+			// show menu when scroll up
+			if (window.scrollY > 42 && currentScrollY > window.scrollY) {
+				// this.node.classList.remove('header-animation-up');
+				// if (this.node.className.indexOf('header-animation-down') === -1) {
+				// 	this.node.className += ' header-animation-down';
+				// }
+				// this.node.style.position = 'fixed';
+				// this.node.style.top = 0;
 			}
+			
+			// hide menu when scroll down
+			if (window.scrollY > 42 && currentScrollY < window.scrollY) {
+				// this.node.classList.remove('header-animation-down');
+				// if (this.node.className.indexOf('header-animation-up') === -1) {
+				// 	this.node.className += ' header-animation-up';
+				// }
+				// this.node.style.position = 'fixed';
+				// this.node.style.top = 0;
+			}
+			
+			if (window.scrollY <= 42) {
+				this.node.style.position = 'inherit';
+				// this.node.classList.remove('header-animation-down');
+			}
+			currentScrollY = window.scrollY;
 		})
 	}
 	
