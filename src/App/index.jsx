@@ -10,11 +10,14 @@ import {
 
 const App = () => (
   <Router>
-    <div>
-      <Route exact path="/home" component={Home} />
-      <Route path="/accounts" component={Accounts} />
-      <Route path="/admin" component={Admin} />
-    </div>
+		<div>
+			<Home />
+			<div>
+				<Route exact path="/home" component={Home} />
+				<Route path="/accounts" component={Accounts} />
+				<Route path="/admin" component={Admin} />
+			</div>
+		</div>
   </Router>
 );
 
