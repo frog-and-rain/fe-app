@@ -1,5 +1,65 @@
-.main {
-	border-top: solid 1px green;
-	text-align: center;
-	padding: 10% 0 10% 0;
+.description {
+	height: 657px;
+	background-color: #fbfbfc;
+}
+
+.description .description-content {
+	margin: 0 84px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 140px 0;
+}
+
+.description-content .description-content-left-title {
+	line-height: 1.3em;
+	font-size: 37px;
+	font-family: Poppins, sans-serif;
+	color: #373737;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+
+.description-content .description-content-left-subtitle {
+	font-size: 18px;
+	color: #808080;
+	line-height: 30px;
+	font-weight: 200;
+}
+
+.description-content .description-content-left-btn {
+	margin-top: 48px;
+}
+
+.description-content-left, .description-content-right {
+	text-align: left;
+	width: 550px;
+	height: 100%;
+}
+
+.description-content-right {
+	height: 336px;
+}
+
+.description-content-right iframe {
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+.description-content-right-animation {
+	-webkit-animation: description 1s;
+	animation: description 1s;
+}
+
+@-webkit-keyframes description {
+	from {transform: translateX(90%); opacity: 0}
+	to {transform: translateX(0); opacity: 1}
+}
+
+@keyframes description {
+	from {transform: translateX(90%); opacity: 0}
+	to {transform: translateX(0); opacity: 1}
 }

@@ -1,0 +1,27 @@
+.modal-content {
+	background-color: #fff;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	-webkit-animation: modalShow 0.5s;
+	animation: modalShow 0.5s;
+}
+
+
+.modal-hide-animation {
+	-webkit-animation: modalHide 1s;
+	animation: modalHide 1s;
+}
+
+@keyframes modalShow {
+	from {transform: scale(0.2)}
+	to {transform: scale(1)}
+}
+
+@keyframes modalHide {
+	from {transform: scale(1)}
+	to {transform: scale(0.2)}
+}
+
