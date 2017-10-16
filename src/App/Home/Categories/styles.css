@@ -10,37 +10,25 @@
 }
 
 .category-item {
-	margin: 0 20%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	width: 120px;
-	height: 60px;
+	height: 120px;
 	cursor: pointer;
 	background-color: #dd4b39;
+	border-radius: 50%;
+	-webkit-animation: move-round 3s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+	animation: move-round 3s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
 }
 
-.category .test {
-	margin: 0 20%;
-	background-color: orange;
-	width: 200px;
-	height: 100px;
-	-webkit-animation: test 3s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
-	animation: test 3s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+@-webkit-keyframes move-round {
+	from {left: 0}
+	to {left: 1000px}
 }
 
-@keyframes btn-rotate {
-	from {transform: rotate(0)}
-	to {transform: rotate(360deg)}
-}
-
-@-webkit-keyframes test {
-	from {transform: rotateY(0); transform-origin: 100% 100%}
-	to {transform: rotateY(-360deg); transform-origin: 100% 100%}
-}
-
-@keyframes test {
-	from {transform: rotateY(0); transform-origin: 100% 100%}
-	to {transform: rotateY(-360deg); transform-origin: 100% 100%}
+@keyframes move-round {
+	from {left: 0}
+	to {left: 1000px}
 }
