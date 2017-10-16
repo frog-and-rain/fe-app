@@ -7,6 +7,7 @@ import Descriptions from  './Descriptions';
 import Categories from './Categories';
 import Members from './Members';
 import Footer from './Footer';
+import ButtonScrollTop from './ButtonScrollTop';
 
 import './styles.css';
 
@@ -36,10 +37,12 @@ const HomeView = () => {
 			<section>
 				<Members />
 			</section>
-			
+
 			<section>
 				<Footer />
 			</section>
+
+			<ButtonScrollTop />
 		</div>
 	)
 };
