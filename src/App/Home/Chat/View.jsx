@@ -6,7 +6,7 @@ import './styles.css';
 const BannerView = ({ messages, setMessage, sendMessage, setInput,
 											setUserName, submitUserName, setNodeName, setNodeContent }) => {
 	return (
-		<div className="banner">
+		<div className="chat">
 			<div ref={setNodeName} className="chat-content-name">
 				<input type="text" onChange={setUserName} placeholder="Enter your name" />
 				<button type="button" onClick={submitUserName}>Submit</button>

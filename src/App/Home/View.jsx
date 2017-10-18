@@ -8,6 +8,7 @@ import Categories from './Categories';
 import Members from './Members';
 import Footer from './Footer';
 import ButtonScrollTop from './ButtonScrollTop';
+import Chat from './Chat';
 
 import './styles.css';
 
@@ -24,6 +25,10 @@ const HomeView = () => {
 			
 			<section>
 				<Banner />
+			</section>
+
+			<section>
+				<Chat />
 			</section>
 			
 			<section>
