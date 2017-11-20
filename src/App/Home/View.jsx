@@ -5,6 +5,7 @@ import Header from './Header';
 import Banner from './Banner';
 import Descriptions from  './Descriptions';
 import Categories from './Categories';
+import Chart from './Chart';
 import Members from './Members';
 import Footer from './Footer';
 import ButtonScrollTop from './ButtonScrollTop';
@@ -16,6 +17,10 @@ const HomeView = () => {
 		<div>
 			<section>
 				<TopBar />
+			</section>
+
+			<section>
+				<Chart />
 			</section>
 			
 			<section>
